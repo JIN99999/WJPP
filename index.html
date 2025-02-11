@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOOJIN CHOI - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ✅ 포트폴리오 타이틀 -->
+    <div class="creator-info">
+        <h2 class="name">WOOJIN CHOI</h2>
+        <p class="creator-title">creator</p>
+    </div>
+        
+        <div class="social-icons">
+            <a href="https://www.instagram.com/uzi_n_" target="_blank" class="icon">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="wj7332@gmail.com" class="icon">
+                <img src="icons/email.svg" alt="Email">
+            </a>
+            <a href="https://www.youtube.com/@UZINUZIC" target="_blank" class="icon">
+                <img src="icons/youtube.svg" alt="YouTube">
+            </a>
+        </div>
+    </div>
+    <!-- ✅ 유튜브 영상 -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3ujUpJOL4kY" 
+                title="포트폴리오 영상" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+ <!-- ✅ 미리보기 사진 7장 -->
+<div class="photo-preview">
+    <h2>PICTURE PORTFOLIO</h2>
+    <div class="preview-grid" id="previewGallery"></div>
+</div>
+
+<!-- 🔹 미리보기 이미지 섹션 -->
+<div id="previewGallery" class="preview-images">
+    <img src="images/photo1.jpg" onclick="openModal('images/photo1.jpg')">
+    <img src="images/photo2.jpg" onclick="openModal('images/photo2.jpg')">
+    <img src="images/photo3.jpg" onclick="openModal('images/photo3.jpg')">
+    <img src="images/photo4.jpg" onclick="openModal('images/photo4.jpg')">
+    <img src="images/photo5.jpg" onclick="openModal('images/photo5.jpg')">
+    <img src="images/photo6.jpg" onclick="openModal('images/photo6.jpg')">
+    <img src="images/photo7.jpg" onclick="openModal('images/photo7.jpg')">
+</div>
+
+
+<!-- 🔹 "MORE" 버튼 -->
+<button id="showGalleryBtn">MORE</button>
+
+<!-- 🔹 전체 사진 갤러리 (처음엔 숨김) -->
+<div id="gallerySection" class="full-gallery"></div>
+<!-- 🔹 페이지네이션 -->
+<div id="pagination"></div>
+    <!-- ✅ 사진 확대 모달 -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modalImage">
+    </div>
+
+    <!-- ✅ JavaScript 연결 -->
+    <script src="script.js"></script>
+
+</body>
+</html>
